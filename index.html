@@ -3,10 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="page-header">
+      <div class="first-line-wrapper">
+        <img class="logo" src="img/logo.svg" alt="Логотип Glaccy Shop" width="154" height="64">
+        <nav class="main-navigation">
+          <ul class="header-site-navigation">
+            <li class="catalog site-navigation-item"><a href="#">Каталог</a>
+              <section class="submenu">
+                <ul>
+                  <li class="submenu-item new"><a href="#">Новинки</a></li>
+                  <li class="submenu-item"><a href="#">Сливочное</a></li>
+                  <li class="submenu-item"><a href="#">Щербеты</a></li>
+                  <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
+                  <li class="submenu-item"><a href="#">Мелорин</a></li>
+                </ul>
+              </section>
+            </li>
+            <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="#">О Компании</a></li>
+          </ul>
+        </nav>
+        <div class="header-user-navigation">
+          <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            <form class="search-field" action="https://echo.htmlacademy.ru" method="GET">
+              <input type="search" placeholder="Что ищем?">
+            </form>
+          </div>
+          <div class="login-section">
+            <a class="login-link user-navigation-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              Вход
+            </a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="login-input" type="email" placeholder="Электронная почта">
+              <input class="login-input" type="password" placeholder="Пароль">
+              <div class="login-links-list">
+                <a class="login-button button" href="#">Войти</a>
+                <div class="login-help">
+                  <a class ="" href="#">Забыли пароль?</a>
+                  <a class ="" href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <a class="cart user-navigation-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+            Пусто
+          </a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <p class="work-hours">С 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525" class="tel">8 812 450-25-25</a>
+      </div>
+    </header>
   </body>
 </html>
