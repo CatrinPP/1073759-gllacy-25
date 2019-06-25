@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ekaterina Parshina](https://up.htmlacademy.ru/htmlcss/25/user/1073759).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
