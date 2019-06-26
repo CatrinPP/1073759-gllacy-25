@@ -619,7 +619,7 @@ input[type="radio"].visually-hidden {
 
 .hit-img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   display: block;
   margin-bottom: 13px;
@@ -648,14 +648,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .price {
   position: absolute;
   top: 207px;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 
   font-size: 30px;
   font-weight: 800;
@@ -680,7 +680,7 @@ input[type="radio"].visually-hidden {
 
 .link {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   border-bottom: 1px solid #9db1a5;
   cursor: pointer;
@@ -692,9 +692,15 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #a7a294;
 }
 
+.link-dark:hover,
+.link-dark:active {
+  color: #e84d37;
+  border-bottom: 1px solid #f9cdc4;  /* исправить в логине */
+}
+
 .hit-btn {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   padding: 8px 16px 12px 17px;
   margin: 9px 0 28px 33px;
@@ -706,7 +712,7 @@ input[type="radio"].visually-hidden {
 .hit-icecream:hover::after {
   content: "";
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: -6px;
   left: -13px;
 
@@ -720,4 +726,94 @@ input[type="radio"].visually-hidden {
 
 .hit-icecream:hover .hit-btn {
   opacity: 1;
+}
+
+.preferences {
+  position: relative;
+  top: -348px;
+
+  background: url(../img/waffle-background.jpg) repeat 0px 10px;
+  border-radius: 15px;
+}
+
+.preferences p {
+  margin: 0;
+}
+
+.preferences-title {
+  padding: 25px 0 22px 20px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  word-spacing: 2px;
+}
+
+.preferences-blocks {
+  display: flex;
+  padding-bottom: 3px;
+}
+
+.preferences-paragraph {
+  position: relative;
+
+  width: 485px;
+  padding-left: 76px;
+  padding-bottom: 21px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.left-column-preferences {
+  margin-right: 8px;
+}
+
+.left-column-preferences .preferences-paragraph:first-child::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 20px;
+
+  width: 49px;
+  height: 49px;
+
+  background: url(../img/icon-icecream.svg) no-repeat;
+}
+
+.left-column-preferences .preferences-paragraph:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 20px;
+
+  width: 49px;
+  height: 49px;
+
+  background: url(../img/icon-eco.svg) no-repeat;
+}
+
+.right-column-preferences .preferences-paragraph:first-child::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 16px;
+
+  width: 49px;
+  height: 49px;
+
+  background: url(../img/cow.svg) no-repeat;
+}
+
+.right-column-preferences .preferences-paragraph:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 16px;
+
+  width: 49px;
+  height: 49px;
+
+  background: url(../img/termo.svg) no-repeat;
 }
