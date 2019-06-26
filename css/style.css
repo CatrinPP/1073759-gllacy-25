@@ -552,7 +552,8 @@ input[type="radio"].visually-hidden {
   background-color: #b2c1b7;
 }
 
-.is-active:focus {
+.is-active:focus,
+.slider-control:active {
   outline: 0;
 }
 
@@ -606,4 +607,117 @@ input[type="radio"].visually-hidden {
   margin-right: 22px;
   margin-bottom: 24px;
   padding: 10px 22px 11px 20px;
+}
+
+.hit-section {
+  position: relative;
+  top: -305px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hit-img {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  margin-bottom: 13px;
+
+  border-radius: 50%;
+}
+
+.hit-icecream {
+  position: relative;
+
+  width: 267px;
+  margin-right: 26px;
+}
+
+.hit-icecream p,
+.hit-icecream a {
+  padding: 0;
+  margin: 0;
+}
+
+.hit-icecream:nth-child(4n) {
+  margin-right: 0;
+}
+
+.hit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.price {
+  position: absolute;
+  top: 207px;
+  left: 0;
+  z-index: 2;
+
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price span {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+.icecream-name {
+  display: inline-block;
+  text-align: center;
+}
+
+.icecream-name span {
+  text-align: center;
+}
+
+.link {
+  position: relative;
+  z-index: 1;
+
+  border-bottom: 1px solid #9db1a5;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid #a7a294;
+}
+
+.hit-btn {
+  position: relative;
+  z-index: 1;
+
+  padding: 8px 16px 12px 17px;
+  margin: 9px 0 28px 33px;
+
+  opacity: 0;
+  border: 0;
+}
+
+.hit-icecream:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -6px;
+  left: -13px;
+
+  width: 293px;
+  height: 100%;
+
+  border-radius: 5px;
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.hit-icecream:hover .hit-btn {
+  opacity: 1;
 }
