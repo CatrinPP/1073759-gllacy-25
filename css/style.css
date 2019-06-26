@@ -412,7 +412,6 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 800;
   color: #fefefe;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 1px 2px 0px #ac1000;
@@ -507,6 +506,7 @@ input[type="radio"].visually-hidden {
   font-size: 32px;
   line-height: 44px;
   font-weight: 800;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 
   border-radius: 36px;
 }
@@ -558,4 +558,52 @@ input[type="radio"].visually-hidden {
 
 .slider-show {
   display: block;
+}
+
+.promo-section {
+  position: relative;
+  top: -345px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo {
+  width: 560px;
+  border-radius: 14px;
+}
+
+.raspberry-promo {
+  background-image: url(../img/rasp-background.jpg);
+}
+
+.chocolate-promo {
+  background-image: url(../img/choco-background.jpg);
+}
+
+.promo p {
+  margin: 0;
+}
+
+.promo-header {
+  padding: 13px 0px 17px 19px;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 800;
+}
+
+.promo-text {
+  padding: 0px 17px 45px 20px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.promo-btn {
+  float: right;
+  margin-right: 22px;
+  margin-bottom: 24px;
+  padding: 10px 22px 11px 20px;
 }
