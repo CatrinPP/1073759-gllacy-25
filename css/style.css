@@ -415,6 +415,7 @@ input[type="radio"].visually-hidden {
 
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 1px 2px 0px #ac1000;
+  border: none;
   border-radius: 20px;
 }
 
@@ -575,11 +576,11 @@ input[type="radio"].visually-hidden {
 }
 
 .raspberry-promo {
-  background-image: url(../img/rasp-background.jpg);
+  background-image: url(../img/backgrounds/rasp-background.jpg);
 }
 
 .chocolate-promo {
-  background-image: url(../img/choco-background.jpg);
+  background-image: url(../img/backgrounds/choco-background.jpg);
 }
 
 .promo p {
@@ -706,7 +707,6 @@ input[type="radio"].visually-hidden {
   margin: 9px 0 28px 33px;
 
   opacity: 0;
-  border: 0;
 }
 
 .hit-icecream:hover::after {
@@ -732,7 +732,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   top: -348px;
 
-  background: url(../img/waffle-background.jpg) repeat 0px 10px;
+  background: url(../img/backgrounds/waffle-background.jpg) repeat 0px 10px;
   border-radius: 15px;
 }
 
@@ -779,7 +779,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background: url(../img/icon-icecream.svg) no-repeat;
+  background: url(../img/decor/icon-icecream.svg) no-repeat;
 }
 
 .left-column-preferences .preferences-paragraph:nth-child(2)::before {
@@ -791,7 +791,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background: url(../img/icon-eco.svg) no-repeat;
+  background: url(../img/decor/icon-eco.svg) no-repeat;
 }
 
 .right-column-preferences .preferences-paragraph:first-child::before {
@@ -803,7 +803,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background: url(../img/cow.svg) no-repeat;
+  background: url(../img/decor/cow.svg) no-repeat;
 }
 
 .right-column-preferences .preferences-paragraph:nth-child(2)::before {
@@ -815,5 +815,75 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background: url(../img/termo.svg) no-repeat;
+  background: url(../img/decor/termo.svg) no-repeat;
+}
+
+.additional-blocks {
+  position: relative;
+  top: -308px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-block {
+  width: 560px;
+  border-radius: 15px;
+}
+
+.additional-block-header {
+  padding: 23px 0px 4px 20px;
+  color: #323232;
+}
+
+.additional-block p {
+  margin: 0;
+}
+
+.additional-block a {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #323232;
+}
+
+.additional-block-text {
+  padding: 34px 16px 34px 26px;
+
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+.blog-news {
+  background: url(../img/backgrounds/strawberry-background.jpg);
+}
+
+.blog-news a {
+  display: block;
+  padding-left: 19px;
+  padding-bottom: 80px;
+  width: 280px;
+}
+
+.blog-description {
+  text-decoration: underline; /*  исправить цвет границы внизу */
+}
+
+.subscribe {
+  background: url(../img/backgrounds/post-gray-background.png);
+}
+
+.subscribe input {
+  width: 355px;
+  padding: 12px 0px 12px 12px;
+  margin-left: 26px;
+  margin-right: 7px;
+
+  border-radius: 6px;
+}
+
+.send-btn {
+  padding: 10px 17px 12px 17px;
 }
