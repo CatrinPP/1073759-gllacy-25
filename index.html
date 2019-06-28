@@ -62,7 +62,9 @@
             <a href="tel:+78124502525" class="tel">8 812 450-25-25</a>
           </div>
         </header>
+      </div>
         <main>
+          <div class="center-wrapper">
           <h1 class="visually-hidden">Глэйси - магазин по продаже мороженого собственного производства</h1>
           <section class="slider-section">
             <div class="slider-switcher">
@@ -153,12 +155,39 @@
               <div class="subscribe-backround">
                 <p class="additional-block-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <input type="email" placeholder="Электронная почта">
-                <button class="button send-btn" type="submit">Отправить</button>
+                <button class="button subscribe-btn" type="submit">Отправить</button>
               </div>
             </section>
           </div>
+        </div>
+        <section class="map-section">
+          <img class="map" src="img/map-pin.png" alt="Адрес на карте: ул.Большая Конюшенная, 19/8" width="1200" height="430">
+          <form class="map-form" action="https://echo.htmlacademy.ru" method="GET">
+            <div class="form-wrapper">
+              <p class="form-text">Адрес главного офиса и офлайн&#8210;магазина:</p>
+              <p class="form-important address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+              <p class="form-text">Для заказов по телефону</p>
+              <p class="form-important form-tel">8 812 450-25-25</p>
+              <p class="form-text form-hours">(с 10 до 20 ежедневно)</p>
+              <a class="form-btn button" href="#">Форма обратной связи</a>
+            </div>
+          </form>
+        </section>
+        <section class="modal">
+          <div class="modal-overlay"></div>
+          <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="feedback-title">Мы обязательно вам ответим!</p>
+            <input class="username" type="text" placeholder="Как вас зовут?" autofocus>
+            <input class="email" type="email" placeholder="Ваша почта для ответа?">
+            <textarea class="modal-text" placeholder="Напишите что-нибудь..." rows="7" cols="20"></textarea>
+            <button class="button feedback-btn" type="submit">Отправить</button>
+            <button class="modal-close" type="button">Закрыть форму</button>
+          </form>
+        </section>
         </main>
-      </div>
+        <footer class="center-wrapper">
+
+        </footer>
     </div>
     <script src="js/script.js"></script>
   </body>
