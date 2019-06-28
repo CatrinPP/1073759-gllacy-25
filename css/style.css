@@ -59,6 +59,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.background-wrapper {
+  /* overflow: hidden; */
+}
+
 .green-background {
   background-color: #849d8f;
 }
@@ -1102,3 +1106,96 @@ input[type="radio"].visually-hidden {
   opacity: 0.52;
 }
 
+.footer {
+  display: flex;
+  margin-top: -270px;
+  padding-bottom: 24px;
+}
+
+.social {
+  padding: 35px 0px 0 4px;
+  margin-right: 200px;
+}
+
+.social svg {
+  position: relative;
+
+  margin-right: 13px;
+}
+
+.social svg:first-child {
+  margin-right: 14px;
+}
+
+.social svg::after {  /*Не работает*/
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 0 0 5px  rgba(255, 255, 255, 0.5); */
+
+   /* box-shadow: 0 0 0 5px  red; */
+}
+
+.footer-menu {
+  display: flex;
+  padding-top: 29px;
+}
+
+.footer-menu-column {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 7px;
+}
+
+.footer-menu-item {
+  margin-bottom: 4px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-menu-item.heart {
+  position: relative;
+
+  font-weight: 800;
+}
+
+.footer-menu-item.heart::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -21px;
+
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/decor/heart.svg");
+}
+
+.copyright {
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 14px;
+}
+
+.copyright-title {
+  padding: 0;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.htmlacademy-logo {
+  display: block;
+  margin-bottom: 4px;
+}
