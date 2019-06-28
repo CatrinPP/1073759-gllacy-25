@@ -59,10 +59,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.background-wrapper {
-  /* overflow: hidden; */
-}
-
 .green-background {
   background-color: #849d8f;
 }
@@ -619,6 +615,11 @@ input[type="radio"].visually-hidden {
   position: relative;
   top: -305px;
 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-catalog {
   display: flex;
   flex-wrap: wrap;
 }
