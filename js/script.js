@@ -8,10 +8,14 @@ var slider2 = document.querySelector(".slider2");
 var slider3 = document.querySelector(".slider3");
 
 // Форма обратной связи
+var feedback = document.querySelector(".feedback");
 var feedbackLink = document.querySelector(".form-btn");
 var feedbackWindow = document.querySelector(".modal");
 var modalClose = feedbackWindow.querySelector(".modal-close");
-var overlay = feedbackWindow.querySelector(".modal-overlay");
+var overlay = document.querySelector(".modal-overlay");
+var username = document.querySelector(".username");
+var email = document.querySelector(".email");
+var message = document.querySelector(".modal-text");
 
 
 // Слайдер
@@ -58,17 +62,21 @@ sliderBtn1.addEventListener("click", function(evt){
   feedbackLink.addEventListener("click", function(evt){
     evt.preventDefault();
     feedbackWindow.classList.add("modal-show");
+    feedback.classList.add("feedback-animation");
+    // feedback.classList.remove("feedback-animation");
   });
 
   modalClose.addEventListener("click", function(evt){
     evt.preventDefault();
     feedbackWindow.classList.remove("modal-show");
+    feedback.classList.remove("modal-error");
   });
 
   window.addEventListener("keydown", function(evt){
     if (evt.keyCode === 27) {
       if (feedbackWindow.classList.contains("modal-show")){
         evt.preventDefault();
+        feedback.classList.remove("modal-error");
         feedbackWindow.classList.remove("modal-show");
       }
     }
@@ -77,4 +85,15 @@ sliderBtn1.addEventListener("click", function(evt){
   overlay.addEventListener("click", function(evt){
     evt.preventDefault();
     feedbackWindow.classList.remove("modal-show");
+    feedback.classList.remove("modal-error");
+  });
+
+  feedbackWindow.addEventListener("submit", function(evt){
+    if (!username.value || !email.value || !message.value){
+      evt.preventDefault();
+      feedback.classList.remove("feedback-animation");
+      feedback.classList.remove("modal-error");
+      feedback.offsetWidth = feedback.offsetWidth;
+      feedback.classList.add("modal-error");
+    }
   });
